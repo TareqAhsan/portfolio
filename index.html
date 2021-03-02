@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <!-- <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" /> -->
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -13,6 +15,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
   <!-- Glidejs -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <!-- Custom StyleSheet -->
   <link rel="stylesheet" href="styles.css" />
   <title>Portfolio Website</title>
@@ -78,7 +81,7 @@
     <div class="icons">
       <span><i class="fab fa-facebook-f"></i></span>
       <span><i class="fab fa-instagram"></i></span>
-      <span><i class="fab fa-twitter"></i></span>
+      <span><i class="fab fa-linkedin"></i></span>
     </div>
   </header>
 
@@ -178,14 +181,24 @@
         <div class="img-area"></div>
         <div class="img-text">
           <span class="header-text"><strong>Tour and Travel</strong></span>
-          <p>Tour and travel is my academic project that i have build for my academic purpose. it is a travel related web project.
+          <p>Tour and travel is my academic project that i have build for my academic purpose. it is a travel related
+            web project.
           </p>
           <a href="https://github.com/TareqAhsan/tour-travel"><i class="fab fa-github"></i></a><a
             href="https://github.com/TareqAhsan/tour-travel"><i class="fas fa-link"></i></a>
         </div>
       </div>
+      <div class="single-box" data-aos="fade-right" data-aos-duration="2000">
+        <div class="img-area"></div>
+        <div class="img-text">
+          <span class="header-text"><strong>Single page Restaurent Management</strong></span>
+          <p>It is a single page restaurent management design. i have use here html,css,bootstrap and some plugin here
+            for design </p>
+          <a href="https://github.com/TareqAhsan/restaurent-management"><i class="fab fa-github"></i></a><a
+            href="https://tareqahsan.github.io/restaurent-management/"><i class="fas fa-link"></i></a>
+        </div>
 
-    </div>
+      </div>
   </section>
 
 
@@ -244,7 +257,8 @@
       <div class="right" data-aos="fade-left" data-aos-duration="2000">
         <h3>My creative skills and experience</h3>
         <p>
-          I have the experience to develop software, and websites, I developed this for my practice and academic projects I have worked on different languages such as C,
+          I have the experience to develop software, and websites, I developed this for my practice and academic
+          projects I have worked on different languages such as C,
           HTML, jquery, CSS & bootstrap, javascript,python as well as i have experience on content writing.
         </p>
         <a href="#" class="btn">Read more</a>
@@ -335,6 +349,35 @@
     </div>
   </section>
 
+  <!--tareqs team end section-->
+
+
+  <div class="container-counter">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="icon-box"><i class="fa fa-briefcase"></i></div>
+        <p class="counter">10</p>
+        <p>Projects Completed</p>
+      </div>
+      <div class="col-md-4">
+        <div class="icon-box"><i class="fa fa-user"></i></div>
+        <p class="counter">40</p>
+        <p>User visited</p>
+      </div>
+      <!-- <div class="col-md-3">
+            <div class="icon-box"><i class="fa fa-trophy"></i></div>
+
+            <p class="counter">4</p>
+            <p>Global achivement</p>
+        </div> -->
+      <div class="col-md-4">
+        <div class="icon-box"><i class="fa fa-coffee"></i></div>
+        <p class="counter">30</p>
+        <p>Cup of Coffee</p>
+      </div>
+    </div>
+  </div>
+
   <!-- Contact -->
   <section class="section contact" id="contact">
     <div class="title">
@@ -345,7 +388,7 @@
       <div class="left" data-aos="fade-down-right" data-aos-duration="2000">
         <h2>Get in Touch</h2>
         <p>
-          this is tareq. you can contact with me in given <address class=""></address>
+          this is tareq. you can contact with me in the given information.<address class=""></address>
           <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
             praesentium quibusdam ratione, cum ducimus minus iure saepe ipsum
             repudiandae. Cum adipisci cumque dicta suscipit fuga aliquid
@@ -416,6 +459,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <!-- Glidejs -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/glide.min.js"></script>
+  <!--counter js-->
+  <script src="jquery.waypoints.min.js"></script>
+  <script src="jquery.counterup.min.js"></script>
+
+
+  <script>
+    jQuery(document).ready(function ($) {
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+      });
+    });
+  </script>
+
+
   <!-- Custom Script -->
   <script src="index.js"></script>
 </body>
