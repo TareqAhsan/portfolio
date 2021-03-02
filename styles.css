@@ -832,6 +832,7 @@ div.projects{
 .icon-box:hover{
   background-color:#800080 ;
   color:#fff;
+  cursor: pointer;
 }
 .container-counter p{
   font-size: 1.5em;
